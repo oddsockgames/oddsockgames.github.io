@@ -1,1 +1,379 @@
-"Hello World!" 
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en" style="overflow: hidden">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<title>Odd Sock Games</title>
+
+<meta name="title" content="Odd Sock Games">
+<meta property="og:title" content="Odd Sock Games" />
+<meta property="og:url" content="//www.oddsockgames.co.uk" />
+
+<meta property="og:image" content="//www.oddsockgames.co.uk/imgs/sitethumb.jpg" />
+<meta property="og:image" content="//www.oddsockgames.co.uk/imgs/sitethumb2.jpg" />
+<meta property="og:image" content="//www.oddsockgames.co.uk/imgs/sitethumb3.jpg" />
+<meta property="og:image" content="//www.oddsockgames.co.uk/imgs/sitethumb4.jpg" />
+
+<meta property="og:site_name" content="Odd Sock Games" />
+
+<meta property="og:description" content="Odd Sock Games is a London based independent game developer consisting of two adequately functioning humans. Jonny Wick (artist/designer) and Gary Goard (programmer/designer). The pair met when they were smaller versions of themselves and bonded over a love of games, which they now make together." />
+
+<meta name="description" content="Odd Sock Games is a London based independent game developer consisting of two adequately functioning humans. Jonny Wick (artist/designer) and Gary Goard (programmer/designer). The pair met when they were smaller versions of themselves and bonded over a love of games, which they now make together.">
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans">
+
+<link rel="icon" type="image/ico" href="favicon.ico"/>
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<!--<script src="js/jquery.1.9.1.min.js"></script>-->
+<script src="js/main.js"></script>
+<script src="js/view.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=.4, maximum-scale=.6">
+
+<script type="text/javascript">
+	var ua = "UA-43231096-1";
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','_gaTracker');
+	//_gaTracker('create', ua, {'cookieDomain': 'none'});
+	_gaTracker('create', ua);
+	trackpage('site');
+	function trackpage(_page, _title) {
+		_title = _title || '';
+		_gaTracker('send',{
+			'hitType': 'pageview',
+			'page': '/' + _page,
+			//'title': _title,
+			'hitCallback': function() {
+				//log('+TRACKED PAGE: page[' + _page+ '] title[' + _title+ '].');
+			}
+		});
+	};
+
+	function  trackevent(_page, _object, _action, _label, _value, _notuser) {
+		_value = _value || 0;
+		_notuser = _notuser || false;
+		_gaTracker('send',{
+			'hitType': 'event',
+			'page': '/' + _page,
+			'eventCategory': _object, //object that was interacted with
+			'eventAction': _action, //type of interaction
+			'eventLabel': _label, //group the events, by label
+			'eventValue': _value, //number
+			'nonInteraction': _notuser, //is it from user
+			'hitCallback': function() {
+				//log('+TRACK EVENT: _object[' + _object+ '] _action[' + _action+ '] _label[' + _label+ '] _value[' + _value+ '] _notuser[' + _notuser + '].');
+			}
+		});
+	};
+</script>
+
+<script type="text/javascript">
+	trackevent('site', 'site', 'html started', 'init', '0', true);
+	$(document).ready(function()
+	{
+		$('#wrapper').css('display', 'block');
+		trackevent('site', 'site', 'html loaded', 'init', '0', true);
+		Main.init();
+	});
+	function log(_str) {try {console.log(_str);} catch(e) {}};
+</script>
+
+</head>
+ 
+<body>
+
+	<noscript>
+		<div id="nojs">
+			<div class="wrap">
+				<p>
+					<span class="blue bold">Error: no JavaScript found!</span><br><br>So Sorry, your browser does not support JavaScript.<br><br> In order to get the full experience from this site, please enable it, upgrade or use another browser.<br><br><a class="txtbtn bold" href="http://www.browsehappy.com" target="_blank">browsehappy.com</a>
+				</p>
+
+				<p>
+					<span class="blue bold">Odd Sock Games</span> is a <span class="bold">London based</span> independent <span class="bold">game developer</span> consisting of two adequately functioning humans.<br><br><a class="txtbtn bold" href="http://www.oddsockgames.co.uk/#jonny" target="_self">Jonny Wick</a> &#9642; artist/designer<br><a class="txtbtn bold" href="http://www.oddsockgames.co.uk/#gary" target="_self">Gary Goard</a> &#9642; programmer/designer<br><br>The pair met when they were smaller versions of themselves and bonded over a love of games, which they now make together.
+				</p>
+			</div>
+		</div>
+	</noscript>
+
+	<div id="wrapper">
+
+	<div id="tooltip"><p>Hello world.</p></div>
+	<div id="loading"></div>
+
+		<!--[ SIDEBAR ]-->
+
+		<div id="sidebar" class="sidebar-dark">
+
+			<div id="sidebar-nav">
+
+				<img class="imgbtn" data-btn-type="nav" data-btn-id="0" src="imgs/small-logo.jpg" />
+
+				<div class="wrap">
+					
+					<div class="nav-item upcase nav-highlight" data-btn-type="nav" data-btn-id="0">
+						<div class="dot">&#9675;</div>
+						<div class="line"></div>
+						<p>Home</p>
+					</div>
+
+		        	<div class="nav-item upcase" data-btn-type="nav" data-btn-id="1">
+		        		<div class="dot">&#9679;</div>
+						<div class="line"></div>
+						<p>Games</p>
+					</div>
+
+					<div class="nav-subitem nav-highlight upcase" data-btn-type="nav" data-btn-id="1">
+						<div class="line"></div>
+						<div class="dot">&#9632;</div>
+						<p>Leaves</p>
+					</div>
+					<div class="nav-subitem nav-highlight upcase" data-btn-type="nav" data-btn-id="2">
+						<div class="line"></div>
+						<div class="dot">&#9632;</div>
+						<p>Spark</p>
+					</div>
+
+					<div class="nav-item upcase nav-highlight" data-btn-type="nav" data-btn-id="3">
+		        		<div class="dot">&#9675;</div>
+						<div class="line"></div>
+		        		<p>Networks</p>
+		        	</div>
+
+		        	<div class="nav-item upcase" data-btn-type="nav" data-btn-id="4">
+		        		<div class="dot">&#9679;</div>
+						<div class="line"></div>
+		        		<p>People</p>
+		        	</div>
+
+		        	<div class="nav-subitem nav-highlight upcase" data-btn-type="nav" data-btn-id="4">
+		        		<div class="line"></div>
+		        		<div class="dot">&#9632;</div>
+						<p>Jonny</p>
+					</div>
+
+					<div class="nav-subitem nav-highlight upcase" data-btn-type="nav" data-btn-id="5">
+						<div class="line"></div>
+						<div class="dot">&#9632;</div>
+						<p>Gary</p>
+					</div>
+
+		        	<div class="nav-item upcase nav-highlight" data-btn-type="nav" data-btn-id="6">
+		        		<div class="dot">&#9675;</div>
+						<div class="line"></div>
+		        		<p>Contact</p>
+		        	</div>
+	        	</div>
+        	</div>
+
+        	<div id="sidebar-copy">
+				<div class="dot">&#9675;</div>
+
+				<!-- HOME -->
+				<div class="page-info"><p>
+					<span class="blue bold">Odd Sock Games</span> is a <span class="bold">London based</span> independent <span class="bold">game developer</span> consisting of two adequately functioning humans.<br><br><span class="bold txtbtn" data-btn-type="nav" data-btn-id="4">Jonny Wick</span> &#9642; artist/designer<br><span class="bold txtbtn"  data-btn-type="nav" data-btn-id="5">Gary Goard</span> &#9642; programmer/designer<br><br>The pair met when they were smaller versions of themselves and bonded over a love of games, which they now make together.
+				</p></div>
+
+				<!-- LEAVES -->
+				<div class="page-info"><p>
+					You are the wind. Will you aid <span class="bold">Yuri the hedgehog</span>?<br><br><span class="blue bold">Leaves</span> is an upcoming experimental point and click game built in <span class="bold">HTML5 Canvas</span>. Once available, it should only take a few minutes to experience.
+				</p></div>
+
+				<!-- SPARK -->
+				<div class="page-info"><p>
+					1001 robots were created to construct an elaborate subterranean structure named <span class="bold">Labrys</span>. With the project complete, they have been left behind with only the code inside of them to give them purpose.<br><br><span class="blue bold">SPARK</span> is an upcoming exploratory adventure where discovery of item upgrades is vital to progression. It has a focus on puzzle solving over action, by using the environment around you in interesting ways to move yourself about. It is designed to be experienced in one sitting and should take under an hour.
+				</p></div>
+
+				<!-- NETWORKS -->
+				<div class="page-info"><p>
+					See our concept art in it's early and embarrassing stages on <span class="blue bold txtbtn" data-btn-type="url" data-btn-id="oddsockgames.tumblr.com">Tumblr</span>. Listen to some sounds on <span class="blue bold txtbtn" data-btn-type="url" data-btn-id="spookyview.bandcamp.com">Bandcamp</span>, doctors would probably agree that it greatly improves your overall ear health if we could find some to ask.<br><br>Write things like 'this game not gud graffix' on our <span class="blue bold txtbtn" data-btn-type="url" data-btn-id="facebook.com/oddsockgames">Facebook</span> wall. Share 140 characters with us on <span class="blue bold txtbtn" data-btn-type="url" data-btn-id="twitter.com/oddsockgames">Twitter</span> and we will share some right back at you with all our might.
+				</p></div>
+
+				<!-- JONNY -->
+				<div class="page-info"><p>
+					They say that <span class="blue bold">Jonny Wick</span> held a colouring pencil in the womb, although that may have just been a smudge on the ultrasound.<br><br><span class="bold">Jonny</span> does art, design, story and sound for <span class="bold txtbtn" data-btn-type="nav" data-btn-id="0">Odd Sock Games</span>.<br><br>The birds and squirrels of East London affectionately know him as, 'That pervert with the zoom lens who is always taking pictures of us.'
+				</p></div>
+
+				<!-- GARY -->
+				<div class="page-info"><p>
+					It took <span class="blue bold">Gary Goard</span> many years to grow a beard but once he did, he and the once barren land of his face never looked back.<br><br><span class="bold">Gary</span> does code, development and design for <span class="bold txtbtn" data-btn-type="nav" data-btn-id="0">Odd Sock Games</span>.<br><br>He is very fond of wheels, particularly when two are stuck on some metal pipes which can then be ridden about town
+				</p></div>
+
+				<!-- CONTACT -->
+				<div class="page-info"><p>
+					We are a small but imperfectly formed outfit of two who make games in our spare time. We do it for the love of creating things and nothing else.<br><br> If interacting with us via any of the options on <span class="bold txtbtn" data-btn-type="nav" data-btn-id="3">Networks</span> isn't appropriate, just send us some good old electronic mail by clicking <span class="blue bold txtbtn" data-btn-type="email" data-btn-id="gmail">here</span> or using the address below.<br><br>We will greedily devour the words that you feed us.<br><br><span class="gmail imgbtn"  data-btn-type="email" data-btn-id="gmail"></span><br><br><span class="txtsmall">Copyright &copy; 2013 Odd Sock Creative Ltd. All rights reserved.</span>
+				</p></div>
+
+        	</div>
+    	</div>
+
+    	<!--[ HEADER ]-->
+
+    	<div id="header" class="grey">
+			<p class="upcase" style="top:-18px; left:22px;">News</p>
+    		<p style="top:-6px; left:100%; padding-left:10px; font-size: 12px;">Slow news day today!</p>
+    		<div class="dot">&#9679;</div>
+    	</div>
+
+    	<!--[ FOOTER ]-->
+
+    	<div id="footer" class="white">
+			<p class="upcase" style="top:-18px; left:22px;">Odd Sock Games</p>
+    		<p class="upcase" style="top:-7px; left:100%; padding-left:10px;">Home</p>
+    		<div class="dot">&#9679;</div>
+    	</div>
+
+    	<div class="page-arrow grey" data-btn-type="page-arrow" data-btn-id="up" data-btn-tooltip="previous page" style="top: 0;">&#9650;</div>
+    	<div class="page-arrow grey" data-btn-type="page-arrow" data-btn-id="down" data-btn-tooltip="next page" style="bottom: 0;">&#9660;</div>
+
+    	<!--[ CONTENT ]-->
+
+    	<div id="sections">
+
+
+    			<!--[ HOME PAGE ]-->
+
+				<div class="section" style="background-color: white;">
+					<div class="wrap" style="top:50%;">
+						<div class="content">
+							<div class="images" style="width:100%;">
+								<div class="img imgbtn" data-btn-type="image" data-btn-id="logo" data-btn-tooltip="Does this look a bit like a face?" style="background-position:0 0; background-image: url('imgs/home-logo.jpg');"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--[ GAMES - LEAVES ]-->
+
+				<div class="section" style="top:10%; background-color: #f8931d;">
+
+					<div class="wrap" style="top:-50%;" >
+
+						<div class="content">
+							<div class="images" style="width:300%;">
+								<div class="img imgbtn" data-btn-type="image" data-btn-id="yuri" data-btn-tooltip="Yuri the hedgehog." style="background-position:0 0; background-image: url('imgs/games-leaves-all.jpg');"></div>
+								<div class="img imgbtn" data-btn-type="image" data-btn-id="yuri" data-btn-tooltip="Some leaves." style="background-position:-400px 0; background-image: url('imgs/games-leaves-all.jpg');"></div>
+								<div class="img imgbtn" data-btn-type="image" data-btn-id="yuri" data-btn-tooltip="Yuri sprite sheet." style="background-position:-800px 0; background-image: url('imgs/games-leaves-all.jpg');"></div>
+							</div>
+						</div>
+
+						<div class="content-arrow grey" data-btn-type="content-arrow" data-btn-id="left" data-btn-tooltip="previous image" style="margin-left:-280px;">&#9668;</div>
+
+    					<div class="content-arrow grey" data-btn-type="content-arrow" data-btn-id="right" data-btn-tooltip="next image" style="margin-left:200px;">&#9658;</div>
+
+					</div>
+
+				</div>
+
+				<!--[ GAMES - SPARK ]-->
+
+				<div class="section" style="top:20%; background-color: #855fa8;">
+					<div class="wrap" style="top:-150%;" >
+
+						<div class="content">
+							<div class="images" style="width:400%;">
+								<div class="img imgbtn" data-btn-type="image" data-btn-id="spark" data-btn-tooltip="Robot 388." style="background-position:0 0; background-image: url('imgs/games-spark-all.jpg');"></div>
+								<div class="img imgbtn" data-btn-type="image" data-btn-id="spark" data-btn-tooltip="Missing parts." style="background-position:-400px 0; background-image: url('imgs/games-spark-all.jpg');"></div>
+								<div class="img imgbtn" data-btn-type="image" data-btn-id="spark" data-btn-tooltip="Some good advice." style=" background-position:-800px 0;background-image: url('imgs/games-spark-all.jpg');"></div>
+								<div class="img imgbtn" data-btn-type="image" data-btn-id="spark" data-btn-tooltip="Rusty bot." style="background-position:-1200px 0; background-image: url('imgs/games-spark-all.jpg');"></div>
+							</div>
+						</div>
+
+						<div class="content-arrow grey" data-btn-type="content-arrow" data-btn-id="left" data-btn-tooltip="previous image" style="margin-left:-280px;">&#9668;</div>
+    					<div class="content-arrow grey" data-btn-type="content-arrow" data-btn-id="right" data-btn-tooltip="next image" style="margin-left:200px;">&#9658;</div>
+
+					</div>
+						
+				</div>
+
+				<!--[ GNETWORKS PAGE ]-->
+
+				<div class="section" style="top:30%; background-color: white;">
+					<div class="wrap" style="top:-250%;">
+						<div class="content">
+
+							<div class="network-icon" data-btn-type="url" data-btn-id="twitter.com/oddsockgames" data-btn-tooltip="twitter.com/oddsockgames" style="background-position: 0 0;"></div>
+
+							<div class="network-icon" data-btn-type="url" data-btn-id="facebook.com/oddsockgames" data-btn-tooltip="facebook.com/oddsockgames" style="background-position: -192px 0;"></div>
+
+							<div class="network-icon" data-btn-type="url" data-btn-id="oddsockgames.tumblr.com" data-btn-tooltip="oddsockgames.tumblr.com" style="background-position: -384px 0;"></div>
+
+							<div class="network-icon" data-btn-type="url" data-btn-id="spookyview.bandcamp.com" data-btn-tooltip="spookyview.bandcamp.com" style="background-position: -576px 0;"></div>
+
+						</div>
+					</div>
+				</div>
+
+				<!--[ PEOPLE - JONNY ]-->
+				
+				<div class="section" style="top:40%; background-color: #3aba43;">
+					<div class="wrap" style="top:-350%; ">
+
+						<div class="content">
+							<div class="images" style="width:100%;">
+								<div class="img imgbtn" data-btn-type="image" data-btn-id="johnny" data-btn-tooltip="Jonny on #8BitLane with 8-bit dog and 8-bit dog poop."  style="background-position:0 0; background-image: url('imgs/people-all.jpg');"></div>
+							</div>
+						</div>
+
+						<div class="side-icons">
+							<div class="network-icon-small" data-btn-type="url" data-btn-id="twitter.com/spookyview" data-btn-tooltip="@spookyview" style="background-position: 0 0;" ></div>
+							<div class="network-icon-small" data-btn-type="url" data-btn-id="spookyview.tumblr.com" data-btn-tooltip="spookyview.tumblr.com" style="background-position: -88px 0;"></div>
+							<div class="network-icon-small" data-btn-type="url" data-btn-id="spookyview.bandcamp.com" data-btn-tooltip="spookyview.bandcamp.com" style="background-position: -132px 0;"></div>
+						</div>
+
+					</div>
+				</div>
+
+				<!--[ PEOPLE - GARY ]-->
+				
+				<div class="section" style="top:50%; background-color: #5994ce;">
+					<div class="wrap" style="top:-450%;">
+						<div class="content">
+							<div class="images" style="width:100%;">
+								<div class="img imgbtn" data-btn-type="image" data-btn-id="gary" data-btn-tooltip="This is not an accurate photographic representation of Gary (his beard is slighty longer)."  style="background-position:-400px 0; background-image: url('imgs/people-all.jpg');"></div>
+							</div>
+						</div>
+
+						<div class="side-icons">
+							<div class="network-icon-small" data-btn-type="url" data-btn-id="twitter.com/theroguebot" data-btn-tooltip="@theroguebot" style="background-position: 0 0;"></div>
+								<div class="network-icon-small" data-btn-type="url" data-btn-id="linkedin.com/in/garygoard" data-btn-tooltip="linkedin.com/in/garygoard" style="background-position: -176px 0;"></div>
+						</div>
+					</div>
+				</div>
+
+				<!--[ CONTACT PAGE ]-->
+				
+				<div class="section" style="top:60%; background-color: black;">
+					<div class="wrap" style="top:-550%;">
+						
+						<div class="content">
+							<div class="images" style="width:200%;">
+								<div class="img imgbtn" data-btn-type="image" data-btn-id="earth" data-btn-tooltip="We both live on here somewhere. Colours may be slightly off."  style="background-position:0 0; background-image: url('imgs/contact-earth.jpg');"></div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+
+				<!--[ SPARE PAGES ]-->
+
+				<div class="section" style="top:70%; background-color: white;">
+					<div class="wrap" style="top:-650%;"></div>
+				</div>
+
+				<div class="section" style="top:80%; background-color: white;">
+					<div class="wrap" style="top:-750%;"></div>
+				</div>
+				
+				<div class="section" style="top:90%; background-color: white;">
+					<div class="wrap" style="top:-850%;"></div>
+				</div>
+				
+				
+		</div>
+
+	</div>
+</body>
+</html>

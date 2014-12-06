@@ -1,0 +1,490 @@
+/* line 27, sass/style.scss */
+#wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+/* line 35, sass/style.scss */
+#nojs {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../imgs/animated-logo-small.gif");
+  display: inline-block;
+}
+/* line 41, sass/style.scss */
+#nojs .wrap {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+}
+/* line 46, sass/style.scss */
+#nojs .wrap p {
+  position: relative;
+  color: white;
+  width: auto;
+  height: auto;
+  margin: 5%;
+  padding: 5%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+/* line 57, sass/style.scss */
+#nojs .wrap a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 62, sass/style.scss */
+#loading {
+  width: 14px;
+  height: 14px;
+  z-index: 11;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  background-image: url("../imgs/loading.gif");
+  background-repeat: none;
+  display: none;
+}
+
+/* line 74, sass/style.scss */
+#tooltip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2px 8px;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 11;
+  display: none;
+  color: white;
+}
+/* line 86, sass/style.scss */
+#tooltip p {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: auto;
+  font-size: 12px;
+  padding-left: 2px;
+}
+/* line 94, sass/style.scss */
+#tooltip span {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  font-size: 16px;
+}
+
+/* line 105, sass/style.scss */
+.corners {
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 110, sass/style.scss */
+.txtsmall {
+  font-size: 9px;
+}
+
+/* line 112, sass/style.scss */
+.txtbtn {
+  cursor: pointer;
+}
+
+/* line 122, sass/style.scss */
+.txtbtn:hover {
+  color: #d00a0b !important;
+  text-decoration: underline;
+}
+
+/* line 128, sass/style.scss */
+.clear {
+  clear: both;
+}
+
+/* line 130, sass/style.scss */
+.upcase {
+  text-transform: uppercase;
+}
+
+/* line 131, sass/style.scss */
+.blue {
+  color: #0167cc !important;
+}
+
+/* line 132, sass/style.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 133, sass/style.scss */
+.grey {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 134, sass/style.scss */
+.white {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+/* line 138, sass/style.scss */
+#sidebar {
+  width: 460px;
+  min-width: 400px;
+  position: absolute;
+  height: 100%;
+  right: 0px;
+  z-index: 10;
+  display: block;
+}
+
+/* line 149, sass/style.scss */
+.sidebar-light {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* line 153, sass/style.scss */
+.sidebar-dark {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 157, sass/style.scss */
+.sidebar-white {
+  background-color: rgba(155, 155, 155, 0.1);
+}
+
+/* line 162, sass/style.scss */
+#sidebar-nav {
+  width: 44px;
+  height: auto;
+  position: absolute;
+  right: 0px;
+  top: 44px;
+  border-top: thin solid white;
+  border-left: thin solid white;
+  padding-top: 30px;
+  display: inline-block;
+}
+/* line 174, sass/style.scss */
+#sidebar-nav .wrap {
+  position: absolute;
+  width: 284px;
+  height: auto;
+  left: -229px;
+}
+/* line 182, sass/style.scss */
+#sidebar-nav .wrap .nav-item {
+  position: relative;
+  display: block;
+  width: 140px;
+  height: 28px;
+  cursor: pointer;
+  text-align: right;
+  margin-top: 1px;
+}
+/* line 191, sass/style.scss */
+#sidebar-nav .wrap .nav-item .line {
+  position: absolute;
+  width: 88px;
+  right: -89px;
+  top: -50%;
+  height: 100%;
+  padding-top: 1px;
+  border-bottom: thin solid white;
+  border-right: thin solid white;
+}
+/* line 202, sass/style.scss */
+#sidebar-nav .wrap .nav-item .dot {
+  width: auto;
+  height: auto;
+  bottom: 5px;
+  right: -1px;
+  font-size: 16px;
+  position: absolute;
+  color: white;
+  display: block;
+}
+/* line 213, sass/style.scss */
+#sidebar-nav .wrap .nav-item p {
+  position: absolute;
+  width: auto;
+  height: auto;
+  margin-top: 9px;
+  font-size: 14px;
+  color: white;
+  right: 11px;
+}
+/* line 222, sass/style.scss */
+#sidebar-nav .wrap .nav-item p:hover {
+  color: #d00a0b;
+}
+/* line 227, sass/style.scss */
+#sidebar-nav .wrap .nav-subitem {
+  position: relative;
+  width: 140px;
+  height: 28px;
+  cursor: pointer;
+  text-align: right;
+  display: none;
+  margin-top: -1px;
+}
+/* line 236, sass/style.scss */
+#sidebar-nav .wrap .nav-subitem .dot {
+  width: auto;
+  height: auto;
+  bottom: 7px;
+  right: 0px;
+  font-size: 12px;
+  position: absolute;
+  color: white;
+  display: block;
+}
+/* line 246, sass/style.scss */
+#sidebar-nav .wrap .nav-subitem .line {
+  position: absolute;
+  width: 91px;
+  right: -89px;
+  top: -50%;
+  height: 100%;
+  padding-top: 1px;
+  border-right: thin solid white;
+  border-left: thin solid white;
+}
+/* line 258, sass/style.scss */
+#sidebar-nav .wrap .nav-subitem p {
+  position: absolute;
+  width: auto;
+  height: auto;
+  margin-top: 12px;
+  font-size: 11px;
+  color: white;
+  right: 11px;
+}
+/* line 267, sass/style.scss */
+#sidebar-nav .wrap .nav-subitem p:hover {
+  color: #d00a0b;
+}
+/* line 272, sass/style.scss */
+#sidebar-nav img {
+  position: absolute;
+  width: 44px;
+  right: 66px;
+  top: -22px;
+}
+
+/* line 280, sass/style.scss */
+#sidebar-copy {
+  width: 416px;
+  height: auto;
+  max-height: 50%;
+  position: absolute;
+  display: inline-block;
+  left: 44px;
+  bottom: 46px;
+  border-bottom: 1px solid white;
+}
+/* line 290, sass/style.scss */
+#sidebar-copy .dot {
+  width: auto;
+  height: auto;
+  bottom: -8px;
+  left: -9px;
+  font-size: 16px;
+  position: absolute;
+  color: white;
+  display: block;
+}
+/* line 300, sass/style.scss */
+#sidebar-copy .page-info {
+  display: none;
+}
+/* line 302, sass/style.scss */
+#sidebar-copy .page-info p {
+  margin-right: 45px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* line 312, sass/style.scss */
+#sidebar-copy .gmail {
+  position: relative;
+  width: 240px;
+  height: 20px;
+  cursor: pointer;
+  display: inline-block;
+  background-image: url("../imgs/contact-gmail.jpg");
+  background-repeat: no-repeat;
+}
+
+/* line 325, sass/style.scss */
+#header, #footer {
+  height: 2px;
+  position: absolute;
+  z-index: 9;
+  border-top: 1px solid;
+  overflow: visible !important;
+}
+/* line 332, sass/style.scss */
+#header .dot, #footer .dot {
+  width: auto;
+  height: auto;
+  right: -8px;
+  top: -9px;
+  font-size: 16px;
+  position: absolute;
+  display: block;
+}
+/* line 341, sass/style.scss */
+#header p, #footer p {
+  display: block;
+  position: absolute;
+  width: auto;
+  height: auto;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* line 351, sass/style.scss */
+#footer {
+  width: 15%;
+  min-width: 144px;
+  top: 44px;
+}
+
+/* line 357, sass/style.scss */
+#header {
+  width: 5%;
+  min-width: 66px;
+  bottom: 44px;
+}
+
+/* line 363, sass/style.scss */
+.page-arrow {
+  width: 16px;
+  height: 16px;
+  padding: 12px 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -244px;
+  z-index: 11;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* line 381, sass/style.scss */
+#sections {
+  position: relative;
+  width: 100%;
+  height: 1000%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  top: 0;
+  overflow: hidden;
+}
+/* line 391, sass/style.scss */
+#sections .section {
+  position: absolute;
+  width: auto;
+  height: 10%;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+/* line 402, sass/style.scss */
+#sections .wrap {
+  width: auto;
+  height: 400px;
+  position: absolute;
+  margin-top: -200px;
+  right: 460px;
+  left: 0;
+}
+/* line 411, sass/style.scss */
+#sections .wrap .content {
+  width: auto;
+  max-width: 400px;
+  height: 100%;
+  position: relative;
+  padding: 0 auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 422, sass/style.scss */
+#sections .wrap .images {
+  width: auto;
+  min-width: 400px;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+}
+/* line 428, sass/style.scss */
+#sections .wrap .images .img {
+  box-sizing: border-box;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  float: left;
+  background-repeat: no-repeat;
+}
+/* line 439, sass/style.scss */
+#sections .wrap .side-icons {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  margin-left: 206px;
+  bottom: 0;
+}
+/* line 447, sass/style.scss */
+#sections .wrap .network-icon {
+  position: relative;
+  float: left;
+  cursor: pointer;
+  width: 192px;
+  height: 192px;
+  margin: 4px;
+  background-image: url("../imgs/network-icons.jpg");
+  background-repeat: no-repeat;
+}
+/* line 457, sass/style.scss */
+#sections .wrap .network-icon-small {
+  position: relative;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  margin-top: 8px;
+  background-image: url("../imgs/network-icons-small.jpg");
+  background-repeat: no-repeat;
+}
+/* line 465, sass/style.scss */
+#sections .wrap .network-icon-small p {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  right: -100px;
+  bottom: 0px;
+  color: rgba(0, 0, 0, 0.3);
+}
+/* line 475, sass/style.scss */
+#sections .wrap .content-arrow {
+  width: 16px;
+  height: 16px;
+  padding: 12px 32px;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  left: 50%;
+  z-index: 11;
+  font-size: 16px;
+  cursor: pointer;
+}
